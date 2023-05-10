@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 data-typeit class="typeit">TypeIt.js Demo page</h2>
+    <div>/* <span id="loop" class="typeit"></span> */</div>
+    <div>/* <span id="random" class="typeit"></span> */</div>
+    <script src="typeit.js"></script>
+    <script>
+        new TypeIt('#random', {
+            text: [
+                "Hello World!",
+                "This is a simple string.",
+                "This is another string.",
+                "This is a third string."
+            ],
+            mode: "random"
+        }).start();
+        new TypeIt('#loop', {
+            text: [
+                "Hello World!",
+                "This is a simple string.",
+                "This is another string.",
+                "This is a third string."
+            ],
+            mode: "loop",
+            speed: 20,
+            randomRange: [50,100]
+        }).start();
+    </script>
+</body>
+</html>
