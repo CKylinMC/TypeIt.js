@@ -40,7 +40,6 @@
             }
             
             @keyframes typeit-cursor {
-                /* 光标动画 */
                 from, to {
                     border-right-color: rgba(0, 0, 0, 0.75);
                 }
